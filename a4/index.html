@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Facebook – Sign Up</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>facebook</h1>
+    <p class="subtitle">Create a new account</p>
+    <p class="subtitle-small">It's quick and easy.</p>
+    <form id="signupForm">
+      <div class="form-row">
+        <input type="text" placeholder="First name" required />
+        <input type="text" placeholder="Surname" required />
+      </div>
+      <input type="text" placeholder="Mobile number or email address" required />
+      <input type="password" placeholder="New password" required />
+      <label for="dob">Date of birth</label>
+      <input type="date" id="dob" required />
+
+      <label>Gender</label>
+      <div class="gender-row">
+        <label><input type="radio" name="gender" value="Female" required /> Female</label>
+        <label><input type="radio" name="gender" value="Male" required /> Male</label>
+        <label><input type="radio" name="gender" value="Custom" required /> Custom</label>
+      </div>
+
+       <button type="button" onclick="signup()">Sign Up</button>
+    </form>
+  </div>
+
+  <script>
+    function signup() {
+      alert("Signup Successful");
+    }
+  </script>
+</body>
+</html>
